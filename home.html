@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <head>
+    <title>home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: #202020;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table,tr{
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+
+        tr{
+            border-bottom: solid 1px #303030;
+            border-top: solid 1px #303030;
+        }
+
+        td:first-child{
+            border-left: none;
+        }
+
+        tr:first-child td{
+            border:none;
+        }
+
+        tr:nth-child(2) td{
+            border: solid 1px #ffffff;
+            background: #303030;
+            color:#fff
+        }
+
+        td{
+            border: solid 1px #303030;
+            border-right: none;
+            text-align: center;
+            font-size: 30px;
+            padding: 1vw;
+        }
+
+        #calendario{
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-calendario{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .button-calendario div{
+            color: #303030;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 10px;
+            border-radius: 5px;
+            padding: 5px 20px;
+            transition: .5s;
+        }
+
+        .button-calendario div:hover{
+            background-color: #303030;
+            color: #fff;
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id="calendario">
+
+    </div>    
+    <script src="js/calendario.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
